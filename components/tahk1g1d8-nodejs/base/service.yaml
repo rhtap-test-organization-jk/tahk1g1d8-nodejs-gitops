@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: tahk1g1d8-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: tahk1g1d8-nodejs 
+  name: tahk1g1d8-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: tahk1g1d8-nodejs 
